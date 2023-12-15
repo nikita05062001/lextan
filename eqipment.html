@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lextan</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="img/logo-header.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body class="Lextan">
+    <header class="Lextan-header">
+      <div class="Lextan-header-content">
+        <div class="Lextan-header-content-logo">
+          <a href="./index.html">
+            <img id="home" src="img/logo-white.png" alt="error"
+          /></a>
+        </div>
+        <nav class="Lextan-header-content-nav">
+          <ul>
+            <a style="color: #f5f5f5" href="./index.html"
+              ><li id="clients">Клиенты</li></a
+            >
+            <a style="color: #f5f5f5" href="./index.html"
+              ><li id="suppliers">Поставщики</li></a
+            >
+            <a style="color: #f5f5f5" href="./index.html"
+              ><li id="company">О компании</li></a
+            >
+            <a style="color: #f5f5f5" href="./index.html"
+              ><li id="contact">Контакты</li></a
+            >
+            <a href="./galery.html"><li>Галерея</li></a>
+            <a href="./eqipment.html"><li>Оборудование</li></a>
+          </ul>
+        </nav>
+        <div class="Lextan-header-content-close">
+          <button class="Lextan-header-content-close-button"></button>
+        </div>
+      </div>
+    </header>
+    <!-- <div class="Lextan-back">
+      <a href="/">
+        <div class="Lextan-back-arrow">
+          <div class="Lextan-back-arrow-top"></div>
+          <div class="Lextan-back-arrow-bottom"></div>
+        </div>
+      </a>
+    </div> -->
+    <div class="Lextan-container">
+      <section class="Lextan-equipment">
+        <div class="Lextan-equipment-title">
+          <h2>Оборудование</h2>
+        </div>
+        <div class="Lextan-equipment-content">
+          <div class="Lextan-equipment-content-block">
+            <div class="Lextan-equipment-content-block-title">
+              <p>Микшерные пульты</p>
+            </div>
+            <div class="Lextan-equipment-content-block-items mySwiper swiper">
+              <div class="swiper-wrapper">
+                <div
+                  style="height: 650px"
+                  class="Lextan-equipment-content-block-items-item swiper-slide"
+                >
+                  <img
+                    class="Lextan-equipment-content-block-items-item-img"
+                    src="img/оборудование/микшерные пульты/Beginner FLOW 8.jpg"
+                  />
+                  <div class="Lextan-equipment-content-block-items-item-title">
+                    <p>Beginner FLOW 8</p>
+                  </div>
+                  <div
+                    class="Lextan-equipment-content-block-items-item-description"
+                  >
+                    <p
+                      class="Lextan-equipment-content-block-items-item-description-top"
+                    >
+                      Компактный цифровой микшерный пульт; количество каналов:
+                      8; входы: 2 х XLR, 2 x комбинированные XLR / 1/4" TRS, 4 х
+                      1/4" TRS, 1 x 1/4" TRS (Footswitch); выходы: 2 х XLR, 2 x
+                      1/4" TRS, 1/4" TRS (выход на наушники).
+                    </p>
+                    <div
+                      class="Lextan-equipment-content-block-items-item-description-bottom"
+                    >
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-title"
+                      >
+                        Стоимость:
+                      </p>
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-price"
+                      >
+                        договорная
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="Lextan-equipment-content-block-items-item swiper-slide"
+                >
+                  <img
+                    class="Lextan-equipment-content-block-items-item-img"
+                    src="img/оборудование/микшерные пульты/Dynacord cms 600-3.jpg"
+                  />
+                  <div class="Lextan-equipment-content-block-items-item-title">
+                    <p>Dynacord cms 600-3</p>
+                  </div>
+                  <div
+                    class="Lextan-equipment-content-block-items-item-description"
+                  >
+                    <p
+                      class="Lextan-equipment-content-block-items-item-description-top"
+                    >
+                      Аналоговый микшерный пульт (6 микр, 2 лин, 4 aux, блок
+                      эффектов). Цена указана без учета доставки и забора до
+                      места проведения мероприятия.
+                    </p>
+                    <div
+                      class="Lextan-equipment-content-block-items-item-description-bottom"
+                    >
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-title"
+                      >
+                        Стоимость:
+                      </p>
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-price"
+                      >
+                        договорная
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="Lextan-equipment-content-block-items-item swiper-slide"
+                >
+                  <img
+                    class="Lextan-equipment-content-block-items-item-img"
+                    src="img/оборудование/микшерные пульты/Микшерный пульт SOUNDCRAFT EFX12.jpg"
+                  />
+                  <div class="Lextan-equipment-content-block-items-item-title">
+                    <p>Микшерный пульт SOUNDCRAFT EFX12</p>
+                  </div>
+                  <div
+                    class="Lextan-equipment-content-block-items-item-description"
+                  >
+                    <p
+                      class="Lextan-equipment-content-block-items-item-description-top"
+                    >
+                      Серия Soundcraft EFX, является следующим поколением
+                      микшерных пультов и сочетает в себе все достоинства
+                      линейки Soundcraft EPM. Эта серия состоит всего из двух
+                      устройств и расширяет линейку недорогих и
+                      многофункциональных микшерных пультов данной компании.
+                    </p>
+                    <div
+                      class="Lextan-equipment-content-block-items-item-description-bottom"
+                    >
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-title"
+                      >
+                        Стоимость:
+                      </p>
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-price"
+                      >
+                        договорная
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="Lextan-equipment-content-block-items-item swiper-slide"
+                >
+                  <img
+                    class="Lextan-equipment-content-block-items-item-img"
+                    src="img/оборудование/микшерные пульты/Аналоговый микшерный пульт Allen & Heath WZ4.jpg"
+                  />
+                  <div class="Lextan-equipment-content-block-items-item-title">
+                    <p>Аналоговый микшерный пульт Allen & Heath WZ4</p>
+                  </div>
+                  <div
+                    class="Lextan-equipment-content-block-items-item-description"
+                  >
+                    <p
+                      class="Lextan-equipment-content-block-items-item-description-top"
+                    >
+                      Профессиональный 12-канальный микшер с возможностью
+                      монтажа в рэковую стойку, FX-процессор эффектов, 100 мм
+                      фейдеры, входы: 14 XLR для микрофонов, 12 TRS + 2 инсерта,
+                      2 TRS (стереовозврат).
+                    </p>
+                    <div
+                      class="Lextan-equipment-content-block-items-item-description-bottom"
+                    >
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-title"
+                      >
+                        Стоимость:
+                      </p>
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-price"
+                      >
+                        договорная
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="Lextan-equipment-content-block-items-item swiper-slide"
+                >
+                  <img
+                    class="Lextan-equipment-content-block-items-item-img"
+                    src="img/оборудование/микшерные пульты/Микшерный пульт Behringer ULTRALINK PRO MX882.jpg"
+                  />
+                  <div class="Lextan-equipment-content-block-items-item-title">
+                    <p>Микшерный пульт Behringer ULTRALINK PRO MX882</p>
+                  </div>
+                  <div
+                    class="Lextan-equipment-content-block-items-item-description"
+                  >
+                    <p
+                      class="Lextan-equipment-content-block-items-item-description-top"
+                    >
+                      Серия Soundcraft EFX, является следующим поколением
+                      микшерных пультов и сочетает в себе все достоинства
+                      линейки Soundcraft EPM. Эта серия состоит всего из двух
+                      устройств и расширяет линейку недорогих и
+                      многофункциональных микшерных пультов данной компании.
+                    </p>
+                    <div
+                      class="Lextan-equipment-content-block-items-item-description-bottom"
+                    >
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-title"
+                      >
+                        Стоимость:
+                      </p>
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-price"
+                      >
+                        договорная
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="Lextan-equipment-content-block-items-item swiper-slide"
+                >
+                  <img
+                    class="Lextan-equipment-content-block-items-item-img"
+                    src="img/оборудование/микшерные пульты/midas m32r.jpeg"
+                  />
+                  <div class="Lextan-equipment-content-block-items-item-title">
+                    <p>Midas M32R</p>
+                  </div>
+                  <div
+                    class="Lextan-equipment-content-block-items-item-description"
+                  >
+                    <p
+                      class="Lextan-equipment-content-block-items-item-description-top"
+                    >
+                      Цифровой микшер.16 микрофонных входов/8 выходов.+8
+                      возвратов. 17 фейдеров. 8fx, 16mix, 6matrix, 6mute,
+                      2xaes50, usb-audio
+                    </p>
+                    <div
+                      class="Lextan-equipment-content-block-items-item-description-bottom"
+                    >
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-title"
+                      >
+                        Стоимость:
+                      </p>
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-price"
+                      >
+                        договорная
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <!---->
+          <div class="Lextan-equipment-content-block">
+            <div class="Lextan-equipment-content-block-title">
+              <p>Микрофоны</p>
+            </div>
+            <div class="Lextan-equipment-content-block-items mySwiper swiper">
+              <div class="swiper-wrapper">
+                <div
+                  class="Lextan-equipment-content-block-items-item swiper-slide"
+                >
+                  <img
+                    class="Lextan-equipment-content-block-items-item-img"
+                    src="img/оборудование/микрофоны/Shure SM57.jpg"
+                  />
+                  <div class="Lextan-equipment-content-block-items-item-title">
+                    <p>Shure SM57</p>
+                  </div>
+                  <div
+                    class="Lextan-equipment-content-block-items-item-description"
+                  >
+                    <p
+                      class="Lextan-equipment-content-block-items-item-description-top"
+                    >
+                      Ручной инструментальный и вокальный микрофон с
+                      динамическим картриджем и кардиоидной диаграммой
+                      направленности. пневматическая антишоковая конструкция без
+                      выключателя на корпусе. частотный диапазон – от 40 гц до
+                      15 кгц.
+                    </p>
+                    <div
+                      class="Lextan-equipment-content-block-items-item-description-bottom"
+                    >
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-title"
+                      >
+                        Стоимость:
+                      </p>
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-price"
+                      >
+                        3500 тг
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="Lextan-equipment-content-block-items-item swiper-slide"
+                >
+                  <img
+                    class="Lextan-equipment-content-block-items-item-img"
+                    src="img/оборудование/микрофоны/Shure SM 58 Beta.jpg"
+                  />
+                  <div class="Lextan-equipment-content-block-items-item-title">
+                    <p>Shure SM 58 Beta</p>
+                  </div>
+                  <div
+                    class="Lextan-equipment-content-block-items-item-description"
+                  >
+                    <p
+                      class="Lextan-equipment-content-block-items-item-description-top"
+                    >
+                      Ручной микрофон с динамическим суперкардиоидным капсюлем
+                      для лид-вокалистов. частотный диапазон – от 50 гц до 16
+                      кгц, расширенный диапазон средних частот и нч-фильтр.
+                    </p>
+                    <div
+                      class="Lextan-equipment-content-block-items-item-description-bottom"
+                    >
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-title"
+                      >
+                        Стоимость:
+                      </p>
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-price"
+                      >
+                        4000 тг
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="Lextan-equipment-content-block-items-item swiper-slide"
+                >
+                  <img
+                    class="Lextan-equipment-content-block-items-item-img"
+                    src="img/оборудование/микрофоны/Shure SM137.jpg"
+                  />
+                  <div class="Lextan-equipment-content-block-items-item-title">
+                    <p>Shure SM137</p>
+                  </div>
+                  <div
+                    class="Lextan-equipment-content-block-items-item-description"
+                  >
+                    <p
+                      class="Lextan-equipment-content-block-items-item-description-top"
+                    >
+                      Студийный инструментальный конденсаторный микрофон с
+                      кардиоидной направленностью и значительным динамическим
+                      диапазоном 122 дБ. Собственный шум микрофона не превышает
+                      показателя 19 дБ-А.
+                    </p>
+                    <div
+                      class="Lextan-equipment-content-block-items-item-description-bottom"
+                    >
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-title"
+                      >
+                        Стоимость:
+                      </p>
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-price"
+                      >
+                        4500 тг
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="Lextan-equipment-content-block-items-item swiper-slide"
+                >
+                  <img
+                    class="Lextan-equipment-content-block-items-item-img"
+                    src="img/оборудование/микрофоны/Shure SM91 Beta.jpg"
+                  />
+                  <div class="Lextan-equipment-content-block-items-item-title">
+                    <p>Shure SM91 Beta</p>
+                  </div>
+                  <div
+                    class="Lextan-equipment-content-block-items-item-description"
+                  >
+                    <p
+                      class="Lextan-equipment-content-block-items-item-description-top"
+                    >
+                      Полукардиоидный конденсаторный микрофон для
+                      нч-инструментов. широкие динамический и частотный
+                      диапазоны, высокий уровень spl – 151-155 дб, подключение
+                      по xlr. двухпозиционный переключатель.
+                    </p>
+                    <div
+                      class="Lextan-equipment-content-block-items-item-description-bottom"
+                    >
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-title"
+                      >
+                        Стоимость:
+                      </p>
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-price"
+                      >
+                        договорная
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="Lextan-equipment-content-block-items-item swiper-slide"
+                >
+                  <img
+                    class="Lextan-equipment-content-block-items-item-img"
+                    src="img/оборудование/микрофоны/Shure SM81.jpg"
+                  />
+                  <div class="Lextan-equipment-content-block-items-item-title">
+                    <p>Shure SM81</p>
+                  </div>
+                  <div
+                    class="Lextan-equipment-content-block-items-item-description"
+                  >
+                    <p
+                      class="Lextan-equipment-content-block-items-item-description-top"
+                    >
+                      Студийный конденсаторный микрофон с кардиоидной
+                      характеристикой направленности. высокий spl до 146 дб с
+                      применением аттенюатора 10 дб. Широкий частотный диапазон
+                      от 20 гц до 20
+                    </p>
+                    <div
+                      class="Lextan-equipment-content-block-items-item-description-bottom"
+                    >
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-title"
+                      >
+                        Стоимость:
+                      </p>
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-price"
+                      >
+                        5000 тг
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="Lextan-equipment-content-block-items-item swiper-slide"
+                >
+                  <img
+                    class="Lextan-equipment-content-block-items-item-img"
+                    src="img/оборудование/микрофоны/Shure SM52 Beta.jpg"
+                  />
+                  <div class="Lextan-equipment-content-block-items-item-title">
+                    <p>Shure SM52 Beta</p>
+                  </div>
+                  <div
+                    class="Lextan-equipment-content-block-items-item-description"
+                  >
+                    <p
+                      class="Lextan-equipment-content-block-items-item-description-top"
+                    >
+                      Динамический микрофон с высокой выходной мощностью и
+                      индивидуальной частотной характеристикой, разработанный
+                      специально для ударных барабанов и других басовых
+                      инструментов
+                    </p>
+                    <div
+                      class="Lextan-equipment-content-block-items-item-description-bottom"
+                    >
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-title"
+                      >
+                        Стоимость:
+                      </p>
+                      <p
+                        class="Lextan-equipment-content-block-items-item-description-bottom-price"
+                      >
+                        4000 тг
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <!---->
+        </div>
+      </section>
+    </div>
+    <footer class="Lextan-footer">
+      <div class="Lextan-container">
+        <div class="Lextan-footer-content">
+          <div class="Lextan-footer-content-logo">
+            <img src="img/logo-white.png" />
+          </div>
+          <div class="Lextan-footer-content-block">
+            <div class="Lextan-footer-content-block-address">
+              <p Lextan-footer-content-addres-title>Адрес</p>
+              <address>
+                Город Астана, Жилой массив Коктал-2, Улица Куланотпес, Дом 12​​
+              </address>
+            </div>
+          </div>
+          <div class="Lextan-footer-content-block">
+            <div class="Lextan-footer-content-block-social">
+              <p class="Lextan-footer-content-block-social-title">
+                Социальные сети
+              </p>
+              <div class="Lextan-footer-content-block-social-ico">
+                <div class="Lextan-footer-content-block-social-ico-inst">
+                  <a
+                    href="https://www.instagram.com/lextan_rent/"
+                    target="_blank"
+                    ><img src="img/svg/instagram.svg"
+                  /></a>
+                </div>
+                <div class="Lextan-footer-content-block-social-ico-tiktok">
+                  <a
+                    href="https://www.tiktok.com/@lextan_rent?is_from_webapp=1&sender_device=pc"
+                    target="_blank"
+                    ><img src="img/svg/tiktok.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Lextan-footer-content-block">
+            <div class="Lextan-footer-content-block-contact">
+              <p>Телефон</p>
+              <a href="tel:+77781877007">8 (778) 187 7007</a>
+            </div>
+          </div>
+          <div class="Lextan-footer-content-block">
+            <div class="Lextan-footer-content-block-whatsapp">
+              <a
+                href="https://wa.me/message/73KGEUYZX5PLK1?src=qr "
+                target="_blank"
+                ><img src="img/qr.jpg"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="Lextan-footer-content-bottom">
+          <p>Copyright © 2023 все права защищены</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="Lextan-whatsapp">
+      <a href="https://wa.me/message/73KGEUYZX5PLK1?src=qr" target="_blank">
+        <img src="img/svg/whatsapp.svg" />
+      </a>
+    </div>
+    <script src="./js/index.bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lextan</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="img/logo-header.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body class="Lextan">
+    <header class="Lextan-header">
+      <div class="Lextan-header-content">
+        <div class="Lextan-header-content-logo">
+          <img id="home" src="img/logo-white.png" alt="error" />
+        </div>
+        <nav class="Lextan-header-content-nav">
+          <ul>
+            <li id="clients">Клиенты</li>
+            <li id="suppliers">Поставщики</li>
+            <li id="company">О компании</li>
+            <li id="contact">Контакты</li>
+            <a href="./galery.html"><li>Галерея</li></a>
+            <a href="./eqipment.html"><li>Оборудование</li></a>
+          </ul>
+        </nav>
+        <div class="Lextan-header-content-close">
+          <button class="Lextan-header-content-close-button"></button>
+        </div>
+      </div>
+    </header>
+
+    <video src="img/video/bg4.mp4" type="video/mp4" autoplay muted loop></video>
+    <section class="Lextan-home" id="home">
+      <div class="Lextan-container">
+        <div class="Lextan-home-video"></div>
+        <div class="Lextan-home-content">
+          <div class="Lextan-home-content-menu">
+            <ul>
+              <li id="concerts" class="selected-menu">Концерты</li>
+              <li id="private">Частное</li>
+              <li id="conferences">Конференции</li>
+              <li id="exhibitions">Выставки</li>
+            </ul>
+
+            <div class="Lextan-home-content-block selected" id="concerts">
+              <div class="swiperMenu">
+                <div class="Lextan-home-content-block-img swiper-wrapper">
+                  <img
+                    src="img/home/20191222_205913.jpg"
+                    class="swiper-slide"
+                  />
+                  <img src="img/галерея/14.jpg" class="swiper-slide" />
+                </div>
+              </div>
+              <article>
+                <div class="Lextan-home-content-block-title">
+                  <p>Концерты</p>
+                </div>
+                <div class="Lextan-home-content-block-text">
+                  <p>
+                    С нами ваш концерт станет настоящим шедевром и останется в
+                    памяти вашей аудитории надолго! Доверьтесь профессионалам и
+                    сделайте ваше мероприятие неповторимым с Lextan. Свяжитесь с
+                    нами уже сегодня, чтобы обсудить детали вашего будущего
+                    концерта!
+                  </p>
+                </div>
+              </article>
+              <div class="Lextan-home-content-block-back"></div>
+              <!-- <div class="Lextan-home-content-block-border"></div> -->
+            </div>
+
+            <div class="Lextan-home-content-block" id="private">
+              <div class="swiperMenu">
+                <div class="Lextan-home-content-block-img swiper-wrapper">
+                  <img
+                    src="img/home/20211030_180737.jpg"
+                    class="swiper-slide"
+                  />
+                  <img src="img/галерея/10.jpg" class="swiper-slide" />
+                </div>
+              </div>
+
+              <article>
+                <div class="Lextan-home-content-block-title">
+                  <p>Частное</p>
+                </div>
+                <div class="Lextan-home-content-block-text">
+                  <p>
+                    Сотрудничество с нами сделает ваше частное событие в
+                    уникальный опыт, который навсегда запечатлеется в
+                    воспоминаниях. Полагайтесь на наших профессионалов и
+                    придайте вашему особому случаю неповторимый характер с
+                    помощью Lextan.
+                  </p>
+                </div>
+              </article>
+              <!-- <div class="Lextan-home-content-block-border"></div> -->
+              <div class="Lextan-home-content-block-back"></div>
+            </div>
+            <div class="Lextan-home-content-block" id="conferences">
+              <div class="swiperMenu">
+                <div class="Lextan-home-content-block-img swiper-wrapper">
+                  <img
+                    src="img/home/20211006_084454.jpg"
+                    class="swiper-slide"
+                  />
+                  <img src="img/галерея/6.jpg" class="swiper-slide" />
+                </div>
+              </div>
+              <article>
+                <div class="Lextan-home-content-block-title">
+                  <p>Конференции</p>
+                </div>
+                <div class="Lextan-home-content-block-text">
+                  <p>
+                    Обеспечьте великолепное звуковое оформление вашей следующей
+                    конференции с нами, компанией Lextan! Мы гарантируем, что
+                    ваше мероприятие будет звучать настолько качественно, что
+                    участники будут в восторге.
+                  </p>
+                </div>
+              </article>
+              <div class="Lextan-home-content-block-back"></div>
+              <!-- <div class="Lextan-home-content-block-border"></div> -->
+            </div>
+            <div class="Lextan-home-content-block" id="exhibitions">
+              <div class="swiperMenu">
+                <div class="Lextan-home-content-block-img swiper-wrapper">
+                  <img
+                    src="img/home/20221220_114110.jpg"
+                    class="swiper-slide"
+                  />
+                  <img src="img/галерея/14.jpg" class="swiper-slide" />
+                </div>
+              </div>
+              <article>
+                <div class="Lextan-home-content-block-title">
+                  <p>Выставки</p>
+                </div>
+                <div class="Lextan-home-content-block-text">
+                  <p>
+                    Достигните высшего качества звука на вашей следующей
+                    выставке с помощью Lextan, вашего надежного партнера по
+                    организации! Мы обеспечим великолепное звуковое оформление
+                    для вашей выставки, сделав каждый звук ясным и кристально
+                    чистым.
+                  </p>
+                </div>
+              </article>
+              <div class="Lextan-home-content-block-back"></div>
+              <!-- <div class="Lextan-home-content-block-border"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Lextan-clients" id="clients">
+      <div class="Lextan-container">
+        <div class="Lextan-clients-title">
+          <p>Наши клиенты</p>
+        </div>
+        <div class="Lextan-clients-content">
+          <div class="Lextan-clients-content-description">
+            <p>
+              В мире бизнеса существует множество компаний, которые в постоянном
+              поиске надежных партнеров для обеспечения высококачественного
+              звука на мероприятиях, съемках, или футбольных матчах. Среди таких
+              компаний выделяются такие гиганты, как Mercedec-Benz, SCAT
+              Airlines, Qazaq Film и Astana Football Club и т.д., которые в
+              течение многих лет доверяют Lextan – одной из ведущих компаний по
+              прокату звукового оборудования.
+            </p>
+          </div>
+          <div class="Lextan-clients-content-company">
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/2-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/5-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/3-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/6-ps.png" />
+            </div>
+
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/21978-6-mercedes-logo-image.png" />
+            </div>
+
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/8-ps.png" />
+            </div>
+
+            <div class="Lextan-clients-content-company-logo">
+              <img
+                src="img/клиенты/327572655_504918071762527_7461829687707475850_n.png"
+              />
+            </div>
+
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/7-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo invert">
+              <img src="img/клиенты/4-ps.png" />
+            </div>
+
+            <div class="Lextan-clients-content-company-logo invert">
+              <img src="img/клиенты/c1fk3j95s0yg7nye4i1jmwnsk5qp7vfz.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/10-ps.png" />
+            </div>
+
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/12-ps.png" />
+            </div>
+
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/13-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/FC_Astana_Logo.svg.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/14-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/logo-min.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo invert">
+              <img src="img/клиенты/logo.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo invert">
+              <img src="img/клиенты/15-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo invert">
+              <img src="img/клиенты/17-ps.png" />
+            </div>
+
+            <div class="Lextan-clients-content-company-logo invert">
+              <img src="img/клиенты/1-ps.png" />
+            </div>
+
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/18-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/19-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo invert">
+              <img src="img/клиенты/partner_6.png" />
+            </div>
+
+            <div class="Lextan-clients-content-company-logo invert">
+              <img src="img/клиенты/turan.png" />
+            </div>
+
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/клиенты/20-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo invert">
+              <img src="img/клиенты/11-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo invert">
+              <img src="img/клиенты/16-ps.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Lextan-clients" id="suppliers">
+      <div class="Lextan-container">
+        <div class="Lextan-partner-title">
+          <p>Наши поставщики</p>
+        </div>
+        <div class="Lextan-clients-content">
+          <div class="Lextan-clients-content-description">
+            <p>
+              Звуковое оборудование на мероприятиях — это не просто техника, это
+              искусство, которое создает незабываемую атмосферу и делает каждое
+              событие неповторимым. Компания Lextan - ваш надежный поставщик в
+              мире звукового оформления мероприятий любого масштаба. Мы
+              предоставляем в аренду высококлассное оборудование от лучших
+              производителей в индустрии, таких как HP, LG, Yamaha, Sennheiser,
+              Midas, Pioneer, Gravity, Bosch и многие другие.
+            </p>
+          </div>
+          <div class="Lextan-clients-content-company">
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/партнеры/1-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/партнеры/11-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/партнеры/1366840034_Klark_Teknik.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/партнеры/3-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo invert">
+              <img src="img/партнеры/2000000-0_thumb.jpg" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img
+                src="img/партнеры/823f714d-4903-4f82-9bce-e514d91f05e0.png_LG.png"
+              />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/партнеры/4-ps.png" />
+            </div>
+
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/партнеры/5-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo invert">
+              <img src="img/партнеры/brand-gravity-150x150.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/партнеры/cordial_150.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/партнеры/GibraltarBadgeSimple.png" />
+            </div>
+
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/партнеры/8-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/партнеры/9-ps.png" />
+            </div>
+
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/партнеры/10-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/партнеры/11-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/партнеры/midas_150.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo invert">
+              <img
+                src="img/партнеры/neutrik-logo-E3F4C9CBE1-seeklogo.com.png"
+              />
+            </div>
+            <div class="Lextan-clients-content-company-logo invert">
+              <img src="img/партнеры/12-ps.png" />
+            </div>
+
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/партнеры/13-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo">
+              <img src="img/партнеры/6-ps.png" />
+            </div>
+            <div class="Lextan-clients-content-company-logo invert">
+              <img src="img/партнеры/2-ps.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Lextan-about" id="company">
+      <div class="Lextan-container">
+        <div class="Lextan-about-title">
+          <p>О компании</p>
+        </div>
+        <div class="Lextan-about-content">
+          <!-- <div class="Lextan-about-content-left">
+            <img src="img/logo-white.png" />
+          </div> -->
+          <div class="Lextan-about-content-right">
+            <p>
+              В самом сердце казахстанской столицы, Астаны, существует место,
+              где каждое событие превращается в незабываемое шоу, где звук и
+              свет переплетаются, чтобы создать магию. Это место - компания
+              'Lextan'.
+            </p>
+
+            <div class="Lextan-about-content-right-line"></div>
+            <p>
+              Что делает 'Lextan' особенной? Это не просто компания,
+              предоставляющая оборудование; это команда талантливых
+              профессионалов, готовых сделать ваше событие неповторимым. Мы
+              знаем, как создать идеальное звучание, чтобы музыка звучала так,
+              как никогда прежде, и как использовать свет, чтобы добавить магии
+              и эмоций в любой момент.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Lextan-contact" id="contact">
+      <div class="Lextan-container">
+        <div class="Lextan-contact-title">
+          <p>Наши контакты</p>
+        </div>
+        <div class="Lextan-contact-content">
+          <div class="Lextan-contact-content-telephone">
+            <div class="Lextan-contact-content-telephone-title">
+              <p>Телефон и почта компании</p>
+            </div>
+            <div class="Lextan-contact-content-telephone-number">
+              <a href="tel:+77781877007">8 (778) 187 70 07</a>
+              <a href="mailto:tan_astana@mail.ru">tan_astana@mail.ru</a>
+            </div>
+          </div>
+          <div class="Lextan-contact-content-social">
+            <div class="Lextan-contact-content-social-title">
+              <p>Связаться с нами</p>
+            </div>
+            <div class="Lextan-contact-content-social-content">
+              <a
+                href="https://wa.me/message/73KGEUYZX5PLK1?src=qr "
+                target="_blank"
+                ><img src="img/svg/whatsapp2.svg"
+              /></a>
+              <a href="https://go.2gis.com/zzwbo" target="_blank"
+                ><img class="gis" src="img/svg/2gis.svg"
+              /></a>
+              <a href="https://www.instagram.com/lextan_rent/" target="_blank"
+                ><img class="instagram" src="img/svg/instagram.svg"
+              /></a>
+            </div>
+          </div>
+          <div class="Lextan-contact-content-adres">
+            <div class="Lextan-contact-content-adres-title">
+              <p>Адрес</p>
+            </div>
+            <div class="Lextan-contact-content-adres-text">
+              <address>
+                Город Астана, Жилой массив Коктал-2, Улица Куланотпес, Дом 12​
+              </address>
+            </div>
+          </div>
+        </div>
+        <div id="map" class="Lextan-contact-map"></div>
+      </div>
+    </section>
+
+    <footer class="Lextan-footer">
+      <div class="Lextan-container">
+        <div class="Lextan-footer-content">
+          <div class="Lextan-footer-content-logo">
+            <img src="img/logo-white.png" />
+          </div>
+          <div class="Lextan-footer-content-block">
+            <div class="Lextan-footer-content-block-address">
+              <p Lextan-footer-content-addres-title>Адрес</p>
+              <address>
+                Город Астана, Жилой массив Коктал-2, Улица Куланотпес, Дом 12​​
+              </address>
+            </div>
+          </div>
+          <div class="Lextan-footer-content-block">
+            <div class="Lextan-footer-content-block-social">
+              <p class="Lextan-footer-content-block-social-title">
+                Социальные сети
+              </p>
+              <div class="Lextan-footer-content-block-social-ico">
+                <div class="Lextan-footer-content-block-social-ico-inst">
+                  <a
+                    href="https://www.instagram.com/lextan_rent/"
+                    target="_blank"
+                    ><img src="img/svg/instagram.svg"
+                  /></a>
+                </div>
+                <div class="Lextan-footer-content-block-social-ico-tiktok">
+                  <a
+                    href="https://www.tiktok.com/@lextan_rent?is_from_webapp=1&sender_device=pc"
+                    target="_blank"
+                    ><img src="img/svg/tiktok.svg"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Lextan-footer-content-block">
+            <div class="Lextan-footer-content-block-contact">
+              <p>Телефон</p>
+              <a href="tel:+77781877007">8 (778) 187 7007</a>
+            </div>
+          </div>
+          <div class="Lextan-footer-content-block">
+            <div class="Lextan-footer-content-block-whatsapp">
+              <a
+                href="https://wa.me/message/73KGEUYZX5PLK1?src=qr "
+                target="_blank"
+                ><img src="img/qr.jpg"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="Lextan-footer-content-bottom">
+          <p>Copyright © 2023 все права защищены</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="Lextan-whatsapp">
+      <a href="https://wa.me/message/73KGEUYZX5PLK1?src=qr" target="_blank">
+        <img src="img/svg/whatsapp.svg" />
+      </a>
+    </div>
+    <script src="./js/index.bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
